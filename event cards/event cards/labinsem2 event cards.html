@@ -1,0 +1,39 @@
+import React from "react";
+
+function EventCard(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <p>Date: {props.date}</p>
+      <p>Venue: {props.venue}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>College Events</h1>
+
+      <EventCard
+        name="Tech Fest"
+        date="10-11-2026"
+        venue="Auditorium"
+      />
+
+      <EventCard
+        name="Cultural Fest"
+        date="15-11-2026"
+        venue="College Ground"
+      />
+
+      <EventCard
+        name="Sports Day"
+        date="20-11-2026"
+        venue="Sports Ground"
+      />
+    </div>
+  );
+}
+
+export default App;
